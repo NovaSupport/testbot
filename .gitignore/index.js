@@ -12,8 +12,8 @@ client.on("ready", () => {
   console.clear();
   console.log("\nC:/Users/degai/Desktop/GamerBot> node index.js");
   console.log("\nPrincipaleBot est allumé !\n");
-  client.user.setActivity("Bonne année !");
-  client.user.setStatus('streaming');
+  client.user.setActivity('YouTube', { type: 'STREAMING' });
+  client.user.setStatus('STREAMING');
 }); 
 
 var mc = ":robot: Vous n'avez pas la permission d'effectuer une commande dans les messages privés. :robot:";
