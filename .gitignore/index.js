@@ -13,6 +13,7 @@ client.on("ready", () => {
   console.log("\nC:/Users/degai/Desktop/GamerBot> node index.js");
   console.log("\nPrincipaleBot est allumé !\n");
   client.user.setActivity("Bonne année !");
+  client.user.setStatus('streaming').catch console.log("Status invalide.");
 }); 
 
 var mc = ":robot: Vous n'avez pas la permission d'effectuer une commande dans les messages privés. :robot:";
