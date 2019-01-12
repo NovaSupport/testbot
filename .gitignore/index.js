@@ -30,7 +30,7 @@ client.on("message", message => {
 }})
 
 client.on("message", message => {
-  if(message.content === "*ping" || message.content === "?ping"){
+  if(message.content === "*ping"){
   console.log("Un utilisateur a dit !ping");
   
       message.channel.send('Mon ping : ')
