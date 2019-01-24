@@ -17,7 +17,8 @@ client.on("ready", () => {
 }); 
 
 var mc = ":robot: Vous n'avez pas la permission d'effectuer une commande dans les messages privés. :robot:";
-var cons = "Un utilisateur (" + message.author.username + ") a dit " + message.content
+//var cons = "Un utilisateur (" + message.author.username + ") a dit " + message.content;
+var cons = "tests";
 
 client.on("message", message => {
   if(message.content === prefix+"ping"){
