@@ -12,7 +12,7 @@ client.on("ready", () => {
   console.clear();
   console.log("\nC:/Users/degai/Desktop/GamerBot> node index.js");
   console.log("\nPrincipaleBot est allumé !\n");
-  client.user.setActivity('OMG ! PrincipaleBot est', { type: 'STREAMING' });
+  client.user.setActivity('PrincipaleBot', { type: 'STREAMING' });
   client.user.setStatus('STREAMING');
 }); 
 
