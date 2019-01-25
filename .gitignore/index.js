@@ -12,8 +12,8 @@ client.on("ready", () => {
   console.clear();
   console.log("\nC:/Users/degai/Desktop/GamerBot> node index.js");
   console.log("\nPrincipaleBot est allumé !\n");
-  client.user.setActivity('Le Bot', { type: 'STREAMING' });
-  client.user.setStatus('STREAMING');
+  //client.user.setActivity('Undifine');
+  //client.user.setStatus('STREAMING');
 }); 
 
 var mc = ":robot: Vous n'avez pas la permission d'effectuer une commande dans les messages privés. :robot:";
@@ -416,3 +416,15 @@ client.on("message", message => {
             console.log(cons);
         }
     })
+
+    client.on("message", message => {
+            if(message.content.startsWith(prefix+"joue")) {
+              if(message.channel.type === "dm") return message.channel.send(mc);
+              if(!(message.content.startsWith("!joue")) && !(message.content.startsWith("?joue"))) return message.channel.send("Vous n'avez pas la permission. Veillez contacter un administrateur pour plus d'informations.")
+                var args = message.content.split(' ').join(' ').slice(6);
+                client.user.setActivity(args);
+                message.channel.send("Le jeu du bot a été changé en "+args+".")
+                console.log(cons);
+            }
+        })
+  
