@@ -186,7 +186,7 @@ client.on("message", message => {
             return message.channel.send("Je ne sais pas si l'utilisateur existe");
         }
         
-        if(message.author.username === ban.username) return message.channel.send("Vous ne pouvez pas vous ban.");
+        if(message.author.username === ban) return message.channel.send("Vous ne pouvez pas vous ban.");
       
         ban.ban().then(member => {
             message.channel.send(`${member.user.username} est ban par ${message.author.username} !`)
