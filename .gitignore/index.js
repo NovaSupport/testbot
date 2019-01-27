@@ -252,8 +252,9 @@ client.on("message", message => {
         .addField("PhenixYT ?", "Proposé par PhenixYT")
         .addField("C'est qui le mec de Talia ?", "Proposé par Ŧãℓiα ｡◕‿◕ღ")
         .addField("C'est qui la meilleur ?", "Proposé par BestPaladin")
+        .addField("Qui est le meilleur bot, Gamerbot ?", "Proposé par Xarlion")
         .setColor('RANDOM')
-        .setFooter("Serveur : ❄🎮Gamers🎮❄ - Photo du bot pas définitive")
+        .setFooter("Serveur : ❄🎮Gamers🎮❄")
         .setThumbnail(client.user.avatarURL)
         message.channel.send(embed);
         console.log(cons);
@@ -384,6 +385,16 @@ client.on("message", message => {
 client.on("message", message => {
     if(message.content === "Tu file des headshoot !") {
         message.channel.send("Toujours en noscope...");
+        console.log(cons);
+    }
+})
+
+client.on("message", message => {
+    if(message.content === "Qui est le meilleur bot, Gamerbot ?") {
+        message.channel.send("C'est Xebot, bien évidemment !");
+        message.channel.send("...")
+        message.channel.send("Tu y as cru, je suis sûr que non...")
+        message.channel.send("Bien sûr, ce n'est pas Xebot mais c'est quelle bot alors ?")
         console.log(cons);
     }
 })
